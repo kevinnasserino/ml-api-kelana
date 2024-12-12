@@ -60,7 +60,7 @@ def recommend_places():
             })
 
     # Simpan data ke Firestore
-    doc_ref = firestore_client.collection('recommendations').document()
+    doc_ref = db.collection('Recommendations').document()
     doc_ref.set({
         "city": city,
         "start_date": start_date,
