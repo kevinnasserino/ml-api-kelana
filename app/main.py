@@ -74,8 +74,7 @@ def recommend_places():
 
     # Menyimpan data rekomendasi dan rute yang dioptimalkan ke Firestore
     firestore_data = {
-        "selected_places": selected_places,
-        "routes": optimized_routes
+        "selected_places": selected_places
     }
     document_id = save_to_firestore(firestore_data)
 
