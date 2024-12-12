@@ -74,10 +74,6 @@ def recommend_places():
 
     # Menyimpan data rekomendasi dan rute yang dioptimalkan ke Firestore
     firestore_data = {
-        "city": city,
-        "start_date": start_date,
-        "end_date": end_date,
-        "price_category": price_category,
         "selected_places": selected_places,
         "routes": optimized_routes
     }
