@@ -1,0 +1,10 @@
+flask
+tensorflow
+nltk
+pandas
+scikit-learn
+matplotlib
+haversine
+ortools
+gunicorn
+google-cloud-firestore
