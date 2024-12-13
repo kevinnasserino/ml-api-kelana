@@ -77,16 +77,13 @@ def recommend_places():
         "selected_places": selected_places
     }
     document_id = save_to_firestore(firestore_data)
-
-    if document_id:
+    
         return jsonify({
             "message": "Data saved successfully",
             "document_id": document_id,
             "selected_places": selected_places,
             "routes": optimized_routes
         })
-    else:
-        return jsonify({"error": "Failed to save data to Firestore"}), 500
 
 optimize_route_blueprint = Blueprint('optimize_route', __name__)
 
