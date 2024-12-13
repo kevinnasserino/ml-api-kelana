@@ -92,7 +92,7 @@ else:
         "message": "Data saved with unknown document ID",
         "selected_places": selected_places,
         "routes": optimized_routes
-    }),
+    }),200
 
 optimize_route_blueprint = Blueprint('optimize_route', __name__)
 
